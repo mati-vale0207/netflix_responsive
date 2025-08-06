@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+    <!--icono o logo en la pestana-->
+  <link rel="icon" href="img/n-removebg-preview.png" type="n.png">
+  <!--icono o logo en la pestana-->
+  <link rel="icon" href="img/n.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+  <!--estilos para perfiles-->
+  <style>
+    /*estilos para body*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #141414;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+
+/*estilos para texto*/
+    h1 {
+      font-size: 5em;
+      margin-bottom: 40px;
+    }
+
+    /*estilos para perfiles*/
+    .profiles {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile {
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s ease;
+    }
+
+    /*hover de perfil*/
+    .profile:hover {
+      transform: scale(1.05);
+    }
+
+    /*estilos para imagen de perfil*/
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 3px solid transparent;
+      transition: border 0.3s ease;
+    }
+
+    /*estilo para hover de imagen*/
+    .profile:hover img {
+      border-color: white;
+    }
+
+    .profile-name {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+
+    
+    /*media queries para diseno responsive*/
+
+        @media (max-width: 767px) {
+      /* Estilos para móviles */
+      h1 {
+        font-size:1em;
+      }
+
+      .profile img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .profile-name {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>¿Quién está viendo ahora?</h1>
+
+  <div class="profiles">
+    <a href="inicio.html" class="profile">
+      <img src="img/usuariopc-removebg-preview1.png" alt="Alex">
+      <div class="profile-name">Alex</div>
+    </a>
+    <a href="inicio.html" class="profile">
+      <img src="img/usuariopc-removebg-preview2.png" alt="Invitado">
+      <div class="profile-name">Invitado</div>
+    </a>
+  </div>
+
+</body>
+
+</html>

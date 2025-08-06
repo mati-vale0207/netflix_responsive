@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/n-removebg-preview.png" type="n.png">
+</head>
+
+<body>
+    <img src="img/logon.png" alt="logo" class="logo">
+    <div class="form-wrapper">
+        <h2>Inicia Sesion</h2>
+
+
+        
+        <form id="login-form">
+            <div class="form-control">
+                <input type="text" id="email" required>
+                <label>Email o numero de celular</label>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password" required>
+                <label>Contraseña</label>
+            </div>
+
+
+            <button type="submit">Iniciar Sesion</button>
+
+            <!--Mensje de error-->
+            <p id="error-msg" style="color: red; text-align: center; margin-top: 10px;"></p>
+
+
+            <div class="form-help">
+                <div class="login-container">
+                    <div style="text-align: center; padding: 5px; padding-bottom: -10px;">
+                        <label style="color: white;">O</label>
+                    </div>
+                    <label>o</label>
+                    <button class="login-button">¿Usar un codigo de inicio de sesion?</button>
+                </div>
+
+
+                <p><a href="#" class="forgot-password">¿Olvidaste la contraseña?</a></p>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Recuerdame</label>
+                </div>
+            </div>
+        </form>
+        <p>¿Primera vez en netflix? <a href="#">Suscribete ya.</a></p>
+        <small>
+            Esta pagina esta protegida por Google reCAPTCHA para comprobar que no eres un robot.
+            <a href="#">Mas Info.</a>
+        </small>
+    </div>
+</body>
+
+</html>
